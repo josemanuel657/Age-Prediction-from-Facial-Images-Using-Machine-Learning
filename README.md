@@ -52,12 +52,12 @@ The [UTKFace dataset](https://www.kaggle.com/jangedoo/utkface-new) includes:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/josemanuel657/Age-Prediction-from-Facial-Images-Using-Machine-Learning.git
+   git clone https://github.com/josemanuel657/Facial-Age-Prediction-ML.git
    ```
 
 2. Navigate into the project directory and install dependencies:
    ```bash
-   cd Age-Prediction-from-Facial-Images-Using-Machine-Learning
+   cd Facial-Age-Prediction-ML
    pip install -r requirements.txt
    ```
 
