@@ -49,16 +49,44 @@ The [UTKFace dataset](https://www.kaggle.com/jangedoo/utkface-new) includes:
    - **PCA Feature Mapping**: Visualized the influence of individual pixels on age predictions, adding interpretability to model decisions.
 
 ## Installation and Usage
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/age-prediction.git
+   git clone https://github.com/josemanuel657/Age-Prediction-from-Facial-Images-Using-Machine-Learning.git
    ```
 
 2. Navigate into the project directory and install dependencies:
    ```bash
-   cd age-prediction
+   cd Age-Prediction-from-Facial-Images-Using-Machine-Learning
    pip install -r requirements.txt
    ```
+
+3. Create a folder called `dataset`:
+   ```bash
+   mkdir dataset
+   cd dataset
+   ```
+
+4. Download the UTKFace dataset:
+   You can download the UTKFace dataset either by using the `kagglehub` library or manually from the [Kaggle link](https://www.kaggle.com/datasets/jangedoo/utkface-new).
+   
+   - **Using `kagglehub`**: Install `kagglehub` and download the dataset directly.
+     ```bash
+     pip install kagglehub
+     ```
+
+     Then, in your code:
+     ```python
+     import kagglehub
+
+     # Download the latest version of the UTKFace dataset
+     path = kagglehub.dataset_download("jangedoo/utkface-new")
+
+     print("Path to dataset files:", path)
+     ```
+
+   - **Manually from Kaggle**: Go to the [UTKFace dataset page](https://www.kaggle.com/datasets/jangedoo/utkface-new), download the files, and move them into the `dataset` folder.
+
 ## Results
 The optimized MLP model performed best, achieving the lowest RMSE. This model's interpretability was enhanced through SHAP, revealing which facial features contributed most to age prediction.
 
